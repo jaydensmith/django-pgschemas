@@ -7,8 +7,9 @@ from django.utils.module_loading import import_string
 
 from django_pgschemas.contrib.channels3.auth import TenantAuthMiddlewareStack
 from django_pgschemas.routing.info import DomainInfo
+from django_pgschemas.routing.middleware import remove_www
 from django_pgschemas.schema import Schema
-from django_pgschemas.utils import get_domain_model, remove_www
+from django_pgschemas.utils import get_domain_model
 
 
 class TenantAwareProtocolTypeRouter(ProtocolTypeRouter):
